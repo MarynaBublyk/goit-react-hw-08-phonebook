@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 // Створення slice фильтра с использованием createSlice
-const filterSlice = createSlice({
+export const filterSlice = createSlice({
   name: 'filter', // ім'я slice фільтра
   initialState: '', // Початковий стан фільтра
   reducers: {

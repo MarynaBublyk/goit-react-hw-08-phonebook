@@ -3,11 +3,11 @@ import { List, Item, Button } from './ContactList.styled';
 import { ReactComponent as DeleteIcon } from '../icons/delete.svg';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { selectVisibleContacts } from '../../redux/selectors';
-import { deleteContacts } from '../../redux/operations';
+import { selectVisibleContacts } from '../../redux/contacts/selectors';
+import { deleteContacts } from '../../redux/contacts/operations';
 
-// Компонент списку контактів
-const ContactList = () => {
+// Компонент списку контактів відповідає за відображення списку контактів
+export const ContactList = () => {
   const contacts = useSelector(selectVisibleContacts);
   const dispatch = useDispatch();
   return (
@@ -31,5 +31,3 @@ const ContactList = () => {
     </List>
   );
 };
-
-export default ContactList;

@@ -1,6 +1,10 @@
 import { createSlice, isAnyOf } from '@reduxjs/toolkit';
 // Імпорт асинхронних Thunk-дій fetchContacts, addContacts, deleteContacts з файлу './operations'
-import { fetchContacts, addContacts, deleteContacts } from './operations';
+import {
+  fetchContacts,
+  addContacts,
+  deleteContacts,
+} from '../../redux/contacts/operations';
 
 // // Исходные контакты телефона
 // const phoneContacts = {
@@ -31,7 +35,7 @@ const contactsSlice = createSlice({
       })
       .addCase(addContacts.fulfilled, (state, action) => {
         // Обробка успішного виконання addContacts
-        state.items.unshift(action.payload); // Додавання нового контакту на початок списку контактів може
+        state.items = action.payload; // Додавання нового контакту на початок списку контактів може
       })
       .addCase(deleteContacts.fulfilled, (state, action) => {
         // Обробка успішного виконання deleteContacts
