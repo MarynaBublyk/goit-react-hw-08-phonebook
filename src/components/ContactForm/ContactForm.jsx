@@ -7,7 +7,6 @@ import { ReactComponent as AddIcon } from '../icons/add.svg';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectContacts } from '../../redux/contacts/selectors';
 import { addContacts } from '../../redux/contacts/operations';
-import { Form, Label, Input, Button } from './ContactForm.styled';
 
 // Генерація унікальних ідентифікаторів для полів форми
 const nameInputId = nanoid();
