@@ -7,7 +7,7 @@ import { RestrictedRoute } from '../RestrictedRoute';
 // import { selectContacts } from '../../redux/auth/selectors';
 import { useAuth } from '../../hooks/useAuth';
 import { refreshUser } from '../../redux/auth/operations';
-import PhoneIcons from '../PhoneIcons/PhoneIcons';
+
 import { Wrapper } from './App.styled';
 // import ContactForm from '../ContactForm/ContactForm';
 // import ContactList from '../ContactList/ContactList';
@@ -65,7 +65,6 @@ export const App = () => {
         {/* Маршрут за замовчуванням (якщо ні один інший маршрут не співпадає) */}
         <Route path="*" element={<Home />} />
       </Routes>
-      {/* <PhoneIcons /> */}
     </Wrapper>
   );
 };
