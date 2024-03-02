@@ -65,7 +65,7 @@ export const App = () => {
         {/* Маршрут за замовчуванням (якщо ні один інший маршрут не співпадає) */}
         <Route path="*" element={<Home />} />
       </Routes>
-      <PhoneIcons />
+      {/* <PhoneIcons /> */}
     </Wrapper>
   );
 };

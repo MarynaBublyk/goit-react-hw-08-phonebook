@@ -21,7 +21,7 @@ export const register = createAsyncThunk(
     try {
       // Виконання POST-запиту на реєстрацію користувача
       const res = await axios.post('/users/signup', credentials); //signup
-      console.log(res.data);
+      // console.log(res.data);
       setAuthHeader(res.data.token); // Встановлення отриманого токена авторизації у заголовок
       return res.data; // Повернення даних з відповіді сервера
     } catch (error) {

@@ -11,6 +11,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
   text-align: center;
   font-size: 20px;
+  float: left;
 `;
 
 export const Title = styled.h1`
