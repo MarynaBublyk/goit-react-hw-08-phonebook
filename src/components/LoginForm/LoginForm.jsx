@@ -28,7 +28,7 @@ export const LoginForm = () => {
           type="email"
           name="email"
           placeholder="Enter your email address"
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          pattern="^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
           title="Please enter a valid email address"
           required
         />
@@ -39,7 +39,7 @@ export const LoginForm = () => {
           type="password"
           name="password"
           placeholder="Enter your password"
-          pattern="^[a-zA-Z0-9!@#$%^&*()-_=+`~[\]{}|:<>/?]+$"
+          pattern="\+?\d{1,4}?[ .\-\s]?\(?\d{1,3}?\)?[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,4}[ .\-\s]?\d{1,9}"
           title="The password must contain only Latin letters (both upper and lower case), numbers and other symbols"
           required
         />
