@@ -78,10 +78,10 @@ export const ContactForm = () => {
           placeholder="Enter your phone number"
           value={number}
           onChange={handleChange}
-          pattern="\+\d{12}"
-          minlength="13"
-          maxlength="13"
-          title="The phone number must consist of 12 digits and start with +"
+          pattern="\+\d{10}"
+          minlength="11"
+          maxlength="11"
+          title="The phone number must consist of 10 digits and start with +"
           required
         />
       </Label>
