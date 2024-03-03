@@ -40,7 +40,7 @@ export const RegisterForm = () => {
           type="email"
           name="email"
           placeholder="Enter your email address"
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           title="Please enter a valid email address"
           required
         />

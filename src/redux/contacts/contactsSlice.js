@@ -35,7 +35,7 @@ const contactsSlice = createSlice({
       })
       .addCase(addContacts.fulfilled, (state, action) => {
         // Обробка успішного виконання addContacts
-        state.items = action.payload; // Додавання нового контакту на початок списку контактів може
+        state.items = [action.payload, ...state.items]; // Додавання нового контакту на початок списку контактів може
       })
       .addCase(deleteContacts.fulfilled, (state, action) => {
         // Обробка успішного виконання deleteContacts
